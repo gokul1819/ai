@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Allocation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Room Allocation</h1>
+        <div class="form-section">
+            <h3>Allocate Room</h3>
+            <form id="roomForm">
+                <label for="bookingIdRoom">Booking ID:</label>
+                <input type="text" id="bookingIdRoom" placeholder="e.g., BK-12345" required>
+                <span id="bookingIdFeedback" class="feedback"></span>
+                
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" required>
+                    <option value="">Select Room Type</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+                
+                <button type="submit" id="allocateButton" disabled>Allocate Room</button>
+            </form>
+        </div>
+
+        <h3>Available Rooms</h3>
+        <div id="roomAvailability" class="room-availability">
+            <p class="room-item">Single: <span id="singleCount">5</span> available</p>
+            <p class="room-item">Double: <span id="doubleCount">3</span> available</p>
+            <p class="room-item">Suite: <span id="suiteCount">2</span> available</p>
+        </div>
+        <a href="index.html">Back to Registration</a>
+    </div>
+
+    <!-- Popup for messages -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

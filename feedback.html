@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback</h1>
+        <div class="form-section">
+            <h3>Submit Feedback</h3>
+            <form id="feedbackForm">
+                <label for="bookingIdFeedback">Booking ID:</label>
+                <input type="text" id="bookingIdFeedback" placeholder="e.g., BK-12345" required>
+                <span id="feedbackFeedback" class="feedback"></span>
+
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" min="1" max="5" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" placeholder="Your feedback..." required></textarea>
+
+                <button type="submit" id="submitFeedbackButton" disabled>Submit Feedback</button>
+            </form>
+        </div>
+        <a href="index.html">Back to Registration</a> | <a href="rooms.html">Room Allocation</a> | <a href="payment.html">Payment</a> | <a href="food.html">Food & Beverages</a>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
