@@ -1,57 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Registration</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hotel Registration</h1>
-        <div class="form-section">
-            <h3>Register Customer</h3>
-            <form id="registrationForm">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" required>
-                
-                <label for="contact">Contact Number:</label>
-                <input type="tel" id="contact" required>
-                
-                <label for="idProof">ID Proof:</label>
-                <input type="text" id="idProof" required>
-                
-                <label for="checkin">Check-In Date:</label>
-                <input type="date" id="checkin" required>
-                
-                <label for="checkout">Check-Out Date:</label>
-                <input type="date" id="checkout" required>
-                
-                <button type="submit">Register</button>
-            </form>
-        </div>
-
-        <div class="form-section">
-            <h3>Manage Reservation</h3>
-            <form id="manageForm">
-                <label for="bookingInput">Enter Booking ID:</label>
-                <input type="text" id="bookingInput" placeholder="e.g., BK-12345" required>
-                <button type="button" onclick="modifyReservation()">Modify</button>
-                <button type="button" onclick="cancelReservation()">Cancel</button>
-            </form>
-        </div>
-        <a href="rooms.html">Go to Room Allocation</a>
-        <a href ="payment.html">Go to payment method</a>
-    </div>
-
-    <!-- Popup for messages -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span id="popupMessage"></span>
-            <button onclick="closePopup()">Close</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
